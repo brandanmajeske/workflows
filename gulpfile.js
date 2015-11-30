@@ -38,10 +38,16 @@ gulp.task('js', function(){
     .pipe(gulp.dest('builds/development/js'));
 });
 
-
 gulp.task('log', function(){
   gutil.log('logging thing...');
 });
+
+gulp.task('watch', function(){
+  gulp.watch(coffeeSources, ['coffee']);
+  gulp.watch(jsSources, ['js']);
+  gulp.watch('components/sass/**/*.scss', ['compass']);
+});
+
 
 gulp.task('default', ['log', 'coffee', 'js', 'compass'], function(){
   gutil.log('Doing the default needful - in the callback');

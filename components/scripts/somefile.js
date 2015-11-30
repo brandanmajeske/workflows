@@ -1,3 +1,3 @@
 (function(){
-  alert("Hello from somefile!")
+  console.log("Hello from somefile!");
 })();
