@@ -3,7 +3,9 @@
   alert("Hello from somefile!")
 })();
 
-var fill;
+var $, fill;
+
+$ = requiure('jquery');
 
 (fill = function(item) {
   return $('.tagline').append("" + item);
