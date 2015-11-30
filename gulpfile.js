@@ -49,6 +49,6 @@ gulp.task('watch', function(){
 });
 
 
-gulp.task('default', ['log', 'coffee', 'js', 'compass'], function(){
+gulp.task('default', ['log', 'coffee', 'js', 'compass', 'watch'], function(){
   gutil.log('Doing the default needful - in the callback');
 });
