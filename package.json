@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "Brandan Majeske"
+  "author": "Brandan Majeske",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7"
+  }
 }
